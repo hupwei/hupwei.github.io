@@ -1,0 +1,102 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #eee;
+}
+.detail {
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    max-width: 960px;
+    min-width: 840px;
+    min-height: 1200px;
+    padding: 180px 100px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.title {
+    position: absolute;
+    font-size: 16px;
+    top: 80px;
+    left: 100px;
+}
+
+.title .lisTime {
+    display: block;
+    font-size: 12px;
+    border-top: 2px solid #666;
+    margin-top: 4px;
+}
+
+.num {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    color: #666;
+    font-size: 12px;
+}
+
+.num .readNum {
+    color: blue;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+}
+
+.content .title-t {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+.content .preview-video{
+    width: 100%;
+}
+.content .div-text {
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-indent: 2em;
+}
+
+.content .img-p {
+    overflow: hidden;
+    position: relative;
+    height: 326px;
+}
+
+.content .file-img {
+    height: 326px;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    top: 50%;
+}
+
+.tag {
+    color: #ddd;
+    font-size: 18px;
+    bottom: 100px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.tag span {
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+}

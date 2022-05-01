@@ -1,0 +1,566 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.clearFiex::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.superDoc{
+    width: 100%;
+    min-height: 500px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+}
+.navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #000;
+}
+.navigation .su-title{
+    width: 100%;
+    height: 80px;
+    font-size: 12px;
+    color: #fff;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+.navigation .na-icon{
+    display: block;
+    float: left;
+    width: 35px;
+    height: 35px;
+    background-image: url(../imgs/logo_min.jpg);
+    background-size: 35px;
+
+}
+.navigation .na-tle,
+.navigation .grade{
+    display: block;
+    margin-left: 45px;
+}
+.navigation .grade{
+    color: #bbb;
+}
+.navigation .grade::before{
+    content: "管理等级：";
+}
+.navigation .nav-ul{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+.navigation .nav-li{
+    height: 38px;
+    line-height: 38px;
+    font-size: 15px;
+    border-bottom: 1px solid #272727;
+}
+.navigation .nav-li:hover{
+    background-color: green;
+    cursor: pointer;
+}
+.conTent{
+    width: 100%;
+    height: 100%;
+    padding-left: 200px;
+    box-sizing: border-box;
+    background-color: #eee;
+}
+.conTent .cont-view{
+    background-color: #fff;
+    padding: 30px;
+}
+.conTent .view-name{
+    display: block;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 50px;
+    padding-left: 20px;
+}
+.conTent .view-tle{
+    display: flex;
+    flex-direction: row;
+    line-height: 38px;
+    justify-content: space-evenly;
+    background-color: cadetblue;
+}
+.conTent .news{
+    max-height: 600px;
+    overflow-y: auto;
+}
+.conTent .news-li{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    line-height: 38px;
+    background-color: #fff;
+}
+.conTent .news-li:nth-child(2n){
+    background-color: rgba(200, 200, 200, 0.1);
+}
+.conTent .news-li:hover{
+    background-color: #eee;
+}
+.conTent .itm,
+.conTent .na-item{
+    width: 180px;
+    text-align: center;
+}
+.conTent .iemp{
+    position: absolute;
+    left: 24px;
+    line-height: 38px;
+    top: 0;
+    font-size: 12px;
+    color: #999;
+}
+.conTent .na-ap{
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 10px;
+}
+.conTent .li-box{
+    font-size: 12px;
+}
+.conTent .itm-k{
+    border: 1px solid;
+    padding: 3px 5px;
+    border-radius: 4px;
+    background-color: cadetblue;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 3px;
+}
+.conTent .itm-k:nth-child(1){
+    background-color: coral;
+}
+.conTent .itemID{
+    display: none;
+}
+/* 预览界面样式 */
+.preview{
+    background-color: rgba(220,220,220,.8);
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+}
+.preview .preview-video{
+    width: 80%;
+}
+.preview::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.detail{
+    position: relative;
+    margin: auto;
+    margin-bottom: 100px;
+    max-width: 960px;
+    min-width: 840px;
+    min-height: 1200px;
+    padding: 180px 100px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.title{
+    position: absolute;
+    font-size: 16px;
+    top: 80px;
+    left: 100px;
+}
+.title .lisTime{
+    display: block;
+    font-size: 12px;
+    border-top: 2px solid #666;
+    margin-top: 4px;
+}
+.num{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    color: #666;
+    font-size: 12px;
+}
+.num .readNum{
+    color: blue;
+}
+.content{
+    width: 100%;
+    text-align: center;
+}
+.content .title-t{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+.content .div-text{
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-indent: 2em;
+}
+.content .img-p{
+    overflow: hidden;
+    position: relative;
+    height: 326px;
+}
+.content .file-img{
+    height: 326px;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    top: 50%;
+}
+.tag{
+    color: #ddd;
+    font-size: 18px;
+    bottom: 100px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+.tag span{
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+}
+/* 预览样式结束 */
+/* 公告样式 */
+
+.Notice .Subtitle{
+    width: 100%;
+    height: 26px;
+    font-size: 14px;
+    border-bottom: 2px solid #ddd;
+}
+.Notice .Notice-title{
+    display: inline-block;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.Notice .Not-conter{
+    padding: 10px 16px;
+    box-sizing: border-box;
+}
+.Notice .tips{
+    display: block;
+    line-height: 20px;
+    font-size: 12px;
+    color: #999;
+}
+.Notice .inform{
+    font-size: 14px;
+    line-height: 32px;
+}
+.Not-book{
+    position: relative;
+    border: 1px solid #ddd;
+}
+.Not-book .inpt{
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left: 0;
+    font-family: ui-sans-serif;
+    border:none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 18px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 32px;
+    overflow-y: hidden;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+.Not-book .div-text{
+    opacity: 0;
+    padding-left: 18px;
+    letter-spacing: 1px;
+    font-family: ui-sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    min-width: 300px;
+    min-height: 34px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.No-but{
+    display: block;
+    font-size: 14px;
+    width: 56px;
+    height: 20px;
+    margin: auto;
+    margin-top: 20px;
+    color: #fff;
+    padding: 6px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: cornflowerblue;
+}
+
+.Not-conter .history{
+    width: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+.history .history-li{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.history .hsry-span:nth-child(1){
+    display: inline-block;
+    background-color: cadetblue;
+    padding: 5px;
+    border-radius: 15px 0;
+    font-size: 12px;
+    color: #fff;
+    margin-right: 10px;
+}
+/* 公告样式结束 */
+/* 内容管理样式 */
+.Notice .lookup{
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    background-color: rgba(200,200,200,0.1);
+    box-sizing: border-box;
+}
+.Notice .up-name{
+    margin-left: 6px;
+    font-size: 14px;
+}
+.Notice .up-select{
+    width: 60px;
+    height: 25px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+.Notice .up-inpt{
+    height: 25px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.Notice .up-implement{
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: dodgerblue;
+}
+.Notice .up-article{
+    margin-left: 10px;
+    font-size: 12px;
+    color: dodgerblue;
+    cursor: pointer;
+}
+.Notice .Header,
+.Notice .sur-li{
+    display: flex;
+    flex-direction: row;
+    line-height: 32px;
+    font-size: 14px;
+    color: #fff;
+    justify-content: space-evenly;
+    background-color: dodgerblue;
+}
+.Notice .surface{
+    max-height: 500px;
+    overflow-y: auto;
+}
+.Notice .sur-li{
+    background-color: #fff;
+    color: #474747;
+    font-size: 12px;
+    border-top: 1px solid rgba(200, 200, 200, 0.1);
+}
+.Notice .sur-li:nth-child(2n){
+    background-color: rgba(200, 200, 200, 0.1);
+}
+.Notice .sur-li:hover{
+    background-color: #eee;
+}
+.Notice .dar-title,
+.Notice .sur-item{
+    width: 180px;
+    text-align: center;
+}
+.Notice .item-Pro{
+    color: red;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.Notice .See{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.delet{
+    width: 100%;
+    height: 40px;
+    background-color: brown;
+    line-height: 40px;
+}
+.delet .del{
+    padding: 3px 4px;
+    background-color: snow;
+    margin-left: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* 内容管理样式结束 */
+/* 小黑板样式 */
+.blackboard .board-tle{
+    font-size: 14px;
+    line-height: 28px;
+    border-bottom: 2px solid #ddd;
+}
+.blackboard .board-content{
+    width: 50%;
+    float: left;
+    background-color: rgba(200,200,200,.1);
+}
+.blackboard .boa-le{
+    font-size: 12px;
+    line-height: 28px;
+    color: #999;
+}
+.blackboard .boa-name{
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.blackboard .inp-name{
+    width: 100%;
+    font-size: 16px;
+    padding: 5px 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.blackboard .boa-text{
+    font-size: 12px;
+    line-height: 30px;
+}
+.blackboard .inp-text{
+    resize: none;
+    width: 100%;
+    min-height: 200px;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.blackboard .boa-but{
+    display: block;
+    font-size: 14px;
+    width: 56px;
+    height: 20px;
+    margin: auto;
+    margin-top: 20px;
+    color: #fff;
+    padding: 6px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: cornflowerblue;
+}
+.Rotation{
+    width: 50%;
+    float: right;
+    background-color: rgba(200,200,200,.1);
+    padding: 5px 30px;
+    box-sizing: border-box;
+}
+.Rotation .Rot-box{
+    display: flex;
+    border: 1px solid #ddd;
+    margin: 25px 0;
+    justify-content: space-around;
+}
+.Rotation .rot-item{
+    position: relative;
+    padding-bottom: 45px;
+    width: 30%;
+    font-size: 12px;
+}
+.Rotation .item-tle{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.Rotation .item-view{
+    width: 100%;
+}
+.Rotation .replace-box{
+    position: absolute;
+    padding: 10px 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Rotation .item-but{
+    display: block;
+    width: 35px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: blue;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+}
+.Rotation .file-but{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    opacity: 0;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+}
+/* 小黑板样式结束 */
+/* js控制类 */
+.none{
+    display: none !important;
+}
+.bgcolor{
+    background-color: green !important;
+}
+.aColr{
+    color: cornflowerblue;
+    padding-bottom: 7px;
+    border-bottom: 2px solid cornflowerblue;
+}
