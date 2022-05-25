@@ -2,11 +2,15 @@
     padding: 0;
     margin: 0;
 }
+:root{
+    --size-all:0.3vw;
+    --bgcolor:#fff;
+    --emheight:2.2vh;
+}
 body{
     font-family:inherit;
-    font-size: 0.2rem;
+    font-size: var(--size-all);
     font-weight: 400;
-    
     box-sizing: border-box;
     background-color: #eee;
 }
@@ -17,7 +21,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: var(--bgcolor);
 }
 .head_left{
     display: flex;
@@ -25,8 +29,8 @@ header{
     justify-content: flex-start;
 }
 .head_left img{
-    width: 12em;
-    margin-right: 2em;
+    width: 12vw;
+    margin-right: 2vw;
 }
 .text_tel{
     display: flex;
@@ -44,7 +48,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #fff;
+    background-color: var(--bgcolor);
 }
 .item{
     display: flex;
@@ -52,10 +56,10 @@ header{
     align-items: center;
 }
 .item img{
-    width: 6em;
+    width: 6vw;
 }
 .tele{
-    background-color: #fff;
+    background-color: var(--bgcolor);
     padding: 8px;
     box-sizing: border-box;
     margin-bottom: 1px;
@@ -67,11 +71,11 @@ header{
     background-image: url(./尖括号.png);
     background-size: 100%;
     display: block;
-    width: 5em;
-    height: 5em;
+    width: 5vw;
+    height: 5vw;
 }
 .content{
-    background-color: #fff;
+    background-color: var(--bgcolor);
 }
 .content .box_item{
     padding: 8px;
@@ -88,6 +92,7 @@ header{
 }
 .content .cent{
     display: flex;
+    padding-top: 0.1vh;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -101,7 +106,7 @@ header{
     flex-direction: column-reverse;
 }
 .content .cent_left span{
-    line-height: 6em;
+    line-height: var(--emheight);
 }
 .content .cent_right span{
     border: 1px solid #eee;
