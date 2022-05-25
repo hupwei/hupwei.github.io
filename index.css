@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:inherit;
+    font-size: 0.2rem;
+    font-weight: 400;
+    
+    box-sizing: border-box;
+    background-color: #eee;
+}
+header{
+    padding: 8px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.head_left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.head_left img{
+    width: 12em;
+    margin-right: 2em;
+}
+.text_tel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 400;
+}
+.head_right{
+    color: rgb(40,120,40)
+}
+.tab{
+    padding: 8px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item img{
+    width: 6em;
+}
+.tele{
+    background-color: #fff;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tele  i{
+    background-image: url(./尖括号.png);
+    background-size: 100%;
+    display: block;
+    width: 5em;
+    height: 5em;
+}
+.content{
+    background-color: #fff;
+}
+.content .box_item{
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+.content .top{
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(240,240,240);
+}
+.content .top span:nth-child(2){
+    color: #2e2;
+}
+.content .cent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content .cent_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content .cent_right{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.content .cent_left span{
+    line-height: 6em;
+}
+.content .cent_right span{
+    border: 1px solid #eee;
+    padding: 1px 12px;
+}
