@@ -5,7 +5,7 @@
 :root{
     --size-all: 18px;
     --bgcolor: #fff;
-    --emheight: 32px;
+    --emheight: 28px;
 }
 body{
     font-family:inherit;
@@ -29,8 +29,9 @@ header{
     justify-content: flex-start;
 }
 .head_left img{
-    width: 12vw;
-    margin-right: 2vw;
+    width: 14vw;
+    height: 14vw;
+    margin-right: 8px;
 }
 .text_tel{
     display: flex;
@@ -47,7 +48,7 @@ header{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: var(--bgcolor);
 }
 .item{
@@ -66,7 +67,6 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    line-height: 52px;
 }
 .tele  i{
     background-image: url(./尖括号.png);
@@ -74,6 +74,9 @@ header{
     display: block;
     width: 5vw;
     height: 5vw;
+}
+.tele span{
+    line-height: 5vw;
 }
 .content{
     background-color: var(--bgcolor);
