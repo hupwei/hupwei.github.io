@@ -66,6 +66,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    line-height: 52px;
 }
 .tele  i{
     background-image: url(./尖括号.png);
