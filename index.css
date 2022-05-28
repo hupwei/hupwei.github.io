@@ -22,6 +22,7 @@ body{
     left: 0;
     width: 100%;
     box-sizing: border-box;
+    background-color: #fff;
     justify-content: space-between;
 }
 .head-title h1{
