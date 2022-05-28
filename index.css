@@ -3,9 +3,9 @@
     margin: 0;
 }
 :root{
-    --size-all:15px;
+    --size-all:24px;
     --bgcolor:#fff;
-    --emheight:24px;
+    --emheight:32px;
 }
 body{
     font-family:inherit;
