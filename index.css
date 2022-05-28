@@ -14,9 +14,33 @@ body{
     box-sizing: border-box;
     background-color: #eee;
 }
+.head-title{
+    padding: 8px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.head-title h1{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 50px;
+}
+.head-title i{
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 500;
+}
+.head-title .pia{
+    margin-top: -12px;
+}
 header{
     padding: 8px;
     margin-bottom: 4px;
+    margin-top: 62px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
