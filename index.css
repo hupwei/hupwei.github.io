@@ -16,7 +16,7 @@ body{
 }
 header{
     padding: 8px;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -44,7 +44,7 @@ header{
 }
 .tab{
     padding: 8px;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
