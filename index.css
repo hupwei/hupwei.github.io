@@ -35,12 +35,12 @@ body{
     font-size: 24px;
 }
 .head-title .pia{
-    margin-top: -12px;
+    margin-top: -6px;
 }
 header{
     padding: 8px;
     margin-bottom: 4px;
-    margin-top: 62px;
+    margin-top: 47px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
